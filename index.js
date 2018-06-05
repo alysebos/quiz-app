@@ -110,7 +110,7 @@ function renderCurrentScore () {
 
 function handleAnswerSelect() {
 	$('#js-question-page').on('click', '.answer-box', (function(event) {
-		$('label').removeClass('selected-answer');
+		$('*').removeClass('selected-answer');
 		$(this).addClass('selected-answer');
 	}));
 }
@@ -124,7 +124,7 @@ function renderQuestionPage() {
 	$('.js-answer-d').text(`${QUIZ[questionCount].d}`);
 	// deselect former answer
 	$('input').prop('checked', false);
-	$('label').removeClass('selected-answer');
+	$('*').removeClass('selected-answer');
 	// show question page
 	$('#js-question-page').show();
 }

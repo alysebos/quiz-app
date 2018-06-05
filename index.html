@@ -41,29 +41,40 @@
 	<div class="question-page" id="js-question-page">
 		<form class="js-question-submit">		
 			<fieldset>
-				<div class="row">
-					<div class="col-12 the-question">
-						<legend class="js-this-question"></legend>
+				<legend>
+					<div class="row">
+						<div class="col-12 the-question js-this-question"></div>
 					</div>
-				</div>
+				</legend>
 
 				<div class="row-no-bottom-margin">
-					<div class="col-6">
-						<label for="a" class="answer-box"><input type="radio" name="answer-select" id="a" value="a" required><p class="js-answer-a"></p></label>
-					</div>
-					<div class="col-6">
-						<label for="b" class="answer-box"><input type="radio" name="answer-select" id="b" value="b"><p class="js-answer-b"></p></label>
-					</div>
+					<label for="a" class="col-6">
+						<div class="answer-box">
+							<input type="radio" name="answer-select" id="a" value="a" required><p class="js-answer-a"></p>
+						</div>
+					</label>
+
+					<label for="b" class="col-6">
+						<div class="answer-box">
+							<input type="radio" name="answer-select" id="b" value="b" required><p class="js-answer-b"></p>
+						</div>
+					</label>
 				</div>
 				<div class="row">
-					<div class="col-6">
-						<label for="c" class="answer-box"><input type="radio" name="answer-select" id="c" value="c"><p class="js-answer-c"></p></label>
-					</div>
-					<div class="col-6">
-						<label for="d" class="answer-box"><input type="radio" name="answer-select" id="d" value="d"><p class="js-answer-d"></p></label>
-					</div>
+					<label for="c" class="col-6">
+						<div class="answer-box">
+							<input type="radio" name="answer-select" id="c" value="c" required><p class="js-answer-c"></p>
+						</div>
+					</label>
+
+					<label for="d" class="col-6">
+						<div class="answer-box">
+							<input type="radio" name="answer-select" id="d" value="d" required><p class="js-answer-d"></p>
+						</div>
+					</label>
 				</div>
-			</fieldset>	
+			</fieldset>
+
 			<div class="row">
 				<div class="col-12">
 					<button class="submit-button js-submit-button" type="submit">Submit Answer</button>

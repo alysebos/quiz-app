@@ -32,9 +32,8 @@ a {
 	padding: 10px;
 	margin: 0;
 	width: 100%;
-	background-color: rgba(60,60,60,.8);
+	background-color: rgba(60,60,60,.9);
 	font-family: Comfortaa, cursive;
-	margin: 0;
 }
 
 .quiz-title, .score-keeper, .question-keeper {
@@ -71,7 +70,7 @@ a {
 }
 
 .start-paragraph, .the-question, .end-page-score {
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.8);
 	color: #333;
 	padding: 20px;
 	font-size: 150%;
@@ -89,7 +88,7 @@ a {
 	font-family: Comfortaa, cursive;
 	font-size: 20px;
 	color: white;
-	background-color: rgba(60,60,60,.8);
+	background-color: rgba(60,60,60,.9);
 	border: 5px solid rgba(60,60,60,0);
 	border-radius: 10px;
 	-webkit-transition: border 0.5s; /* For Safari 3.1 to 6.0 */
@@ -99,11 +98,16 @@ a {
 }
 
 .submit-button:focus, .submit-button:hover {
-	border: 5px solid rgba(255,255,255,0.75);
+	border: 5px solid rgba(255,255,255,0.85);
 }
 
 fieldset {
 	border: 0;
+}
+
+legend {
+	display: block;
+	width: 100%;
 }
 
 .answer-box {
@@ -115,7 +119,7 @@ fieldset {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 125%;
 	color: #333;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.9);
 	border: 5px solid rgba(255,255,255,0);
 	border-radius: 10px;
 	-webkit-transition: border 0.5s;
@@ -125,7 +129,7 @@ fieldset {
 }
 
 .answer-box:focus, .answer-box:hover {
-	border: 5px solid rgba(60,60,60,0.8);
+	border: 5px solid rgba(60,60,60,0.9);
 }
 
 .answer-box input {
@@ -134,13 +138,13 @@ fieldset {
 }
 
 .selected-answer {
-	border: 5px solid rgba(60,60,60,0.8);	
+	border: 5px solid rgba(60,60,60,0.9);	
 }
 
 .answer-result-image {
 	width: 60%;
 	border-radius: 10px;
-	border: 5px solid rgba(255,255,255,0.75);
+	border: 5px solid rgba(255,255,255,0.85);
 	float: right;
 }
 
@@ -150,7 +154,7 @@ fieldset {
 	border: 0;
 	color: #333;
 	padding: 10px;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.9);
 	border-radius: 10px;
 	float: left;
 }
