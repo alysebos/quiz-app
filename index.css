@@ -1,0 +1,257 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #333;
+	background-image: url('https://i.imgur.com/i3ih2Hu.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	font-weight: none;
+	color: inherit;
+	cursor: default;
+}
+
+.hidden {
+	display: none;
+}
+
+.header-container {
+	padding: 10px;
+	margin: 0;
+	width: 100%;
+	background-color: rgba(60,60,60,.8);
+	font-family: Comfortaa, cursive;
+	margin: 0;
+}
+
+.quiz-title, .score-keeper, .question-keeper {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.quiz-title {
+	font-size: 25px;
+}
+
+.score-keeper, .question-keeper {
+	font-size: 15px;
+}
+
+.question-keeper {
+	float: right;
+	text-align: right;
+}
+
+.page-icon {
+	width: 40px;
+}
+
+.title-page, .question-page, .answer-result, .quiz-results {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.start-paragraph, .the-question, .end-page-score {
+	background-color: rgba(255,255,255,.7);
+	color: #333;
+	padding: 20px;
+	font-size: 150%;
+	line-height: 1.75em;
+	font-family: Comfortaa, cursive;
+	border-radius: 10px;
+	text-align: justify;
+}
+
+.submit-button {
+	display: block;
+	padding: 10px;
+	margin: auto;
+	cursor: pointer;
+	font-family: Comfortaa, cursive;
+	font-size: 20px;
+	color: white;
+	background-color: rgba(60,60,60,.8);
+	border: 5px solid rgba(60,60,60,0);
+	border-radius: 10px;
+	-webkit-transition: border 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: border 0.5s;
+	width: 60%;
+	min-width: 250px;
+}
+
+.submit-button:focus, .submit-button:hover {
+	border: 5px solid rgba(255,255,255,0.75);
+}
+
+fieldset {
+	border: 0;
+}
+
+.answer-box {
+	display: block;
+	position: relative;
+	margin: 10px auto;
+	padding: 10px;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 125%;
+	color: #333;
+	background-color: rgba(255,255,255,.8);
+	border: 5px solid rgba(255,255,255,0);
+	border-radius: 10px;
+	-webkit-transition: border 0.5s;
+    transition: border 0.5s;
+    text-align: center;
+    position: relative;
+}
+
+.answer-box:focus, .answer-box:hover {
+	border: 5px solid rgba(60,60,60,0.8);
+}
+
+.answer-box input {
+	position: absolute;
+	opacity: 0;
+}
+
+.selected-answer {
+	border: 5px solid rgba(60,60,60,0.8);	
+}
+
+.answer-result-image {
+	width: 60%;
+	border-radius: 10px;
+	border: 5px solid rgba(255,255,255,0.75);
+	float: right;
+}
+
+.answer-result-text-box {
+	text-align: center;
+	width: 60%;
+	border: 0;
+	color: #333;
+	padding: 10px;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 10px;
+	float: left;
+}
+
+.result-icon {
+	font-size: 500%;
+	margin-bottom: 10px;
+}
+
+.result-text {
+	font-size: 175%;
+	font-family: Comfortaa, cursive;
+	margin-bottom: 10px;
+}
+
+.fa-check {
+	color: #198c19;
+}
+
+.fa-times {
+	color: #c70000;
+}
+
+.end-page-score {
+	font-size: 150%;
+	text-align: center;
+	font-family: Comfortaa, cursive;
+}
+
+.final-score {
+	font-size: 200%;
+	margin: 10px auto;
+}
+
+.score-text {font-size: 75%;}
+
+@media only screen and (max-width: 639px) {
+
+	.header-container {
+		padding: 5px;
+	}
+
+	.page-icon-div {
+		display: none;
+	}
+
+	.score-keeper, .question-keeper {
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+	}
+
+	.title-page, .question-page, .answer-result, .quiz-results {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		transform: none;
+		width: 100%;
+	}
+
+	.start-paragraph, .the-question {
+		font-size: 100%;
+	}
+	
+	.answer-result-image {
+		width: 100%;
+		margin: auto;
+		display: block;
+		float: none;
+	}
+
+	.answer-result-text-box {
+		float: none;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.result-icon {
+		font-size: 25px;
+		margin-bottom: 5px;
+	}
+
+	.result-text {
+		font-size: 20px;
+		font-family: Comfortaa, cursive;
+		margin-bottom: 5px;
+	}
+
+	.answer-box {
+		padding: 5px;
+		margin: 5px auto;
+	}
+
+}
+
+@media only screen and (max-height: 550px) {
+	.title-page, .question-page, .answer-result, .quiz-results {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		transform: none;
+		width: 100%;
+	}
+}
